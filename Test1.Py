@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 
-df = pd.DataFrame(
+df = pd.data_editor(
     [
         {"command": "st.selectbox", "rating": 4, "is_widget": True},
         {"command": "st.balloons", "rating": 5, "is_widget": False},
@@ -9,4 +9,4 @@ df = pd.DataFrame(
     ]
 )
 
-st.dataframe(df, use_container_width=True)
+st.data_editor(df, use_container_width=True)
