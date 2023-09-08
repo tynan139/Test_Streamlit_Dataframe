@@ -9,4 +9,4 @@ df = pd.DataFrame(
     ]
 )
 
-st.data_editor(df, use_container_width=True)
+st.data_editor(df, num_rows= "dynamic",use_container_width=True)
